@@ -4,7 +4,8 @@ module.exports = defineConfig({
   e2e: {
     //here we can set base url for all tests
     //after that we can use cy.visit('/') instead of full url in each test
-    baseUrl: "https://playground.bondaracademy.com/",
+    // baseUrl: "https://playground.bondaracademy.com/",
+    baseUrl: "https://conduit.bondaracademy.com/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },

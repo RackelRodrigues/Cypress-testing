@@ -26,6 +26,13 @@
 
 import "cypress-iframe";
 
-Cypress.Commands.add("openHomePage", (email, password) => {
+// Cypress.Commands.add("openHomePage", (email, password) => {
+//   cy.visit("/");
+// });
+Cypress.Commands.add("LoginToAplication", () => {
   cy.visit("/");
+  cy.contains("Sign in");
+  cy.get("[placeholder:Email]").type("cyuser@egg.com");
+  cy.get("[placeholder:Password]").type("12345678");
+  cy.contains("button", "Sign in").click();
 });
