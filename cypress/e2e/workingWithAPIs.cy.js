@@ -54,7 +54,9 @@ it("waiting for apis", () => {
     });
 });
 
-it("delete article", () => {
+// The "retries: 2" option means Cypress will retry this test up to 2 times if it fails.
+// It's useful to handle temporary issues like network delays or slow page loading.
+it("delete article", { retries: 2 }, () => {
   cy.request({
     url: "https://conduit-api.bondaracademy.com/api/users/login",
     method: "POST",
