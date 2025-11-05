@@ -15,14 +15,19 @@ It serves as a playground to explore Cypress commands, techniques, and best prac
 
 This project is dedicated to **learning and experimenting** with Cypress, improving my testing skills, and understanding how to automate complex web interactions efficiently.
 
-## 📁 Folder Structure
 
-e2e/ # End-to-end test files (.cy.js)
-fixtures/ # Mock data and example JSON files
-page-objects/ # Page Object classes encapsulating UI interactions
-screenshots/ # Screenshots automatically saved from test runs
-support/ # Custom commands, hooks, and global configuration
-cypress.config.js # Main Cypress configuration file
+## 📁 Project Structure
+```bash
+cypress-practice-tests/
+├── e2e/                 # End-to-end test files (.cy.js)
+├── fixtures/            # Mock data and example JSON files
+├── page-objects/        # Page Object classes encapsulating UI interactions
+├── screenshots/         # Screenshots automatically saved from test runs
+├── support/             # Custom commands, hooks, and global configurations
+├── cypress.config.js    # Main Cypress configuration file
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project documentation
+```
 
 ## 🧠 Tech Stack
 
